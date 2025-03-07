@@ -17,7 +17,13 @@ Requirements:
 */
 
 function exploreThisInArrowFunction(arrowFunc, regularFunc) {
-    // Implement this function
+  // Implement this function
+  let obj = {
+    name: "Akua",
+    arrowFunc,
+    regularFunc,
+  };
+  return [obj.arrowFunc(), obj.regularFunc()];
 }
 
 module.exports = exploreThisInArrowFunction;
